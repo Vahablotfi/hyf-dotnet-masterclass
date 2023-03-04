@@ -42,7 +42,7 @@ app.MapGet("/Exercise3", () => {
     { 
         if (arr[i]<= 0)
         {
-            sumOfNegatives -= arr[i];
+            sumOfNegatives += arr[i];
         } else{
             multiOfPositive *= arr[i];
         }
@@ -68,9 +68,10 @@ if (input<=1)
           do
     {
          fibonacciNumbers.Add(fibonacciNumbers[fibonacciNumbers.Count - 1] + fibonacciNumbers[fibonacciNumbers.Count - 2]);
-    } while (fibonacciNumbers.Count<=input);
-  
+    } 
+    while (fibonacciNumbers.Count<=input);
     };
+
       return $"{input} fibonacci number is :{fibonacciNumbers[fibonacciNumbers.Count - 1]}";
 
 });
